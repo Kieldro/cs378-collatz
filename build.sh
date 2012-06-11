@@ -18,17 +18,17 @@ echo COMPILING...
 g++ -ansi -pedantic -Wall $source -o $source.app
 
 #echo RUNNING PROGRAM...
-#$source.app < $inFile > $outFile
-#valgrind Sphere.c++.app < $inFile #>& $outFile
+$source.app < $inFile > $outFile
+valgrind $source.app < $inFile >& $outFile
 
 echo CHECKING OUTPUT...
-#diff -lc RunCollatz.out RunCollatz.in
+diff -lc RunCollatz.out RunCollatz.in
 
 echo GENERATING COMMIT LOG...
 git log > Collatz.log
 
-echo RUNNING DOXYGEN
-doxygen Doxyfile
+echo RUNNING DOXYGEN...
+#doxygen Doxyfile
 
 << '--MULTICOMMENT--'
 free comments!

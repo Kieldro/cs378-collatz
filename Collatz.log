@@ -1,3 +1,9 @@
+commit 83c4f27d8f05f22c6fcbbcd4698ccf0057b69199
+Author: Ian Buitrago <kieldro@gmail.com>
+Date:   Mon Jun 11 17:51:44 2012 -0500
+
+    configured doxygen.
+
 commit cf9102f3ebd29b180d1daa2938638dff09cb243c
 Author: Ian Buitrago <kieldro@gmail.com>
 Date:   Mon Jun 11 17:44:27 2012 -0500
