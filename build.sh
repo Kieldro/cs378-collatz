@@ -1,18 +1,27 @@
-<< '--MULTICOMMENT--'
-free comments!
---MULTICOMMENT--
+
 
 # file variables
-inFile="RunCollatz.in"
+inFile="test.in"
 outFile="RunCollatz.out"
-compile=false
+compile=true
+unit=false
 
-echo UNIT TESTS...
-g++ TestCollatz.c++ &> TestCollatz.c++.out
+if $unit; then
+	echo UNIT TESTS...
+	ls /usr/include/cppunit/
+	locate libcppunit.a
+	g++ -ansi -pedantic -lcppunit -ldl -Wall TestCollatz.c++ -o TestCollatz.c++.app
+	valgrind TestCollatz.c++.app >& TestCollatz.c++.out
+fi
 
 echo RUNNING PROGRAM...
 g++ -ansi -pedantic -Wall RunCollatz.c++ -o RunCollatz.c++.app
-valgrind RunCollatz.c++.app < $inFile >& $outFile
+RunCollatz.c++.app < $inFile
+#valgrind RunCollatz.c++.app < $inFile #>& $outFile
+
+
+<< '--MULTICOMMENT--'
+free comments!
 
 echo CHECKING OUTPUT...
 diff -lc RunCollatz.out RunCollatz.in
@@ -27,3 +36,4 @@ echo RUNNING DOXYGEN
 doxygen -g
 doxygen Doxyfile
 
+--MULTICOMMENT--

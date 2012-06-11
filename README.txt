@@ -15,6 +15,7 @@ questions:
 * failure test is a test that always fail eg x = 0?
 * git mv f1 f2
 * how does hashbang work?
+* how do you echo command then execute elegantly?
 
 I attest that I have written every line of code that I have submitted
 and I take full responsibility for the origin of all the code submitted.
