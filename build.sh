@@ -1,6 +1,7 @@
 
 
 # file variables
+source="SphereCollatz.c++"
 inFile="test.in"
 outFile="RunCollatz.out"
 compile=true
@@ -14,10 +15,12 @@ if $unit; then
 	valgrind TestCollatz.c++.app >& TestCollatz.c++.out
 fi
 
+echo COMPILING...
+g++ -ansi -pedantic -Wall $source -o $source.app
+
 echo RUNNING PROGRAM...
-g++ -ansi -pedantic -Wall RunCollatz.c++ -o RunCollatz.c++.app
-RunCollatz.c++.app < $inFile
-#valgrind RunCollatz.c++.app < $inFile #>& $outFile
+$source.app < $inFile
+#valgrind Sphere.c++.app < $inFile #>& $outFile
 
 
 << '--MULTICOMMENT--'
@@ -29,8 +32,8 @@ diff -lc RunCollatz.out RunCollatz.in
 echo GENERATING COMMIT LOG...
 git log > Collatz.log
 
-echo UPDATING SPHERECOLLATZ FILE...
-cp Collatz.c++ SphereCollatz.c++
+#echo UPDATING SPHERECOLLATZ FILE...
+#cp Collatz.c++ SphereCollatz.c++
 
 echo RUNNING DOXYGEN
 doxygen -g
