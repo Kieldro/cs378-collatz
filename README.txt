@@ -1,22 +1,18 @@
-Course Name: CS 373
-Unique: 91055
+Course Name: CS 378
+Unique: 
 First Name: Ian
 Last Name: Buitrago
 EID: ib
 CS Username: keo
 GitHub ID: Kieldro
-GitHub Repository Name: cs373-collatz
+GitHub Repository Name: cs378-collatz
 Estimated number of hours: 10
 Actual    number of hours: 12
 Comments:
 questions:
-* What does chmod ugo+x RunCollatz.py do?
 * tab vs 2 space indention
-* don't submit java files?
 * convention/style
 * failure test is a test that always fail eg x = 0?
-* is 8 1 allowed as input?
-* global variables bad?
 * git mv f1 f2
 * how does hashbang work?
 
