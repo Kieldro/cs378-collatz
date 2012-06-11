@@ -49,6 +49,18 @@ struct TestCollatz : CppUnit::TestFixture {
         CPPUNIT_ASSERT(j ==   10);}
 
     // ----
+    // cycleLength
+    // ----
+
+    void test_cycleLength_1 () {
+        const int v = cycleLength(1);
+        CPPUNIT_ASSERT(v == 1);}
+
+    void test_cycleLength_2 () {
+        const int v = cycleLength(2);
+        CPPUNIT_ASSERT(v == 2);}
+
+    // ----
     // eval
     // ----
 

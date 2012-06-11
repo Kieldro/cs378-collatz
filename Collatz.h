@@ -11,6 +11,9 @@
 #include <cassert>  // assert
 #include <iostream> // endl, istream, ostream
 
+// globals
+int cache [1000*1000];
+
 // ------------
 // collatz_read
 // ------------
@@ -36,16 +39,18 @@ bool collatz_read (std::istream& r, int& i, int& j) {
 // -------------
 
 /**
- * prints the values of i, j, and v
- * @param i the beginning of the range, inclusive
- * @param j the end       of the range, inclusive
- * @param v the max cycle length
+ * returns v, the cycle length
+ * @param n positive integer
  */
 int cycleLength (int n) {
 	int v = 1;
 	
-	
 	for(int k = n; k != 1;){
+		if(cache[k] != 0){
+			v += cache[k] - 1;
+			break;
+		}
+		
 		if (k % 2){
 			k = k + (k >> 1) + 1;
 			v += 2;
@@ -53,29 +58,11 @@ int cycleLength (int n) {
 			k /= 2;
 			++v;
 		}
-		
-		
 	}
 	
-	return v;
-	/*
-	v = 1
-	k = n
-	while k != 1:
-		#check cache
-		if k in cache:
-			v += cache[k] -1
-			break
-		if k % 2:
-			k = k + (k >> 1) + 1		# computes 2 steps
-			v += 2
-		else:
-			k /= 2
-			v += 1
-	# cache n
-	cache[n] = v
-	*/
+	cache[n] = v;
 	
+	return v;
 }
 
 // ------------
@@ -91,7 +78,6 @@ int collatz_eval (int i, int j) {
     assert(i > 0);
     assert(j > 0);
     
-    // <your code>
     if (i > j){		// swap
     	int t = i;
     	i = j;

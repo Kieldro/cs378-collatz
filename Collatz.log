@@ -1,3 +1,15 @@
+commit 664e3842e0a857793b6075dae711db320f8be2fb
+Author: Ian Buitrago <kieldro@gmail.com>
+Date:   Mon Jun 11 17:10:12 2012 -0500
+
+    SphereCollatz.c++ accepted by Sphere.
+
+commit c7c77c098e710af4fc4ccaf88561b0f645b79c60
+Author: Ian Buitrago <kieldro@gmail.com>
+Date:   Mon Jun 11 15:55:29 2012 -0500
+
+    more files.
+
 commit 182607b71b43f8bba4ea3b9936d889988f167e59
 Author: Ian Buitrago <kieldro@gmail.com>
 Date:   Mon Jun 11 15:32:59 2012 -0500

@@ -1,36 +1,34 @@
 
 
 # file variables
-source="SphereCollatz.c++"
-inFile="test.in"
+source="RunCollatz.c++"
+unitFile="TestCollatz.c++"
+inFile="RunCollatz.in"
 outFile="RunCollatz.out"
 compile=true
-unit=false
+unit=true
 
 if $unit; then
 	echo UNIT TESTS...
-	ls /usr/include/cppunit/
-	locate libcppunit.a
-	g++ -ansi -pedantic -lcppunit -ldl -Wall TestCollatz.c++ -o TestCollatz.c++.app
-	valgrind TestCollatz.c++.app >& TestCollatz.c++.out
+	g++ -ansi -pedantic -lcppunit -ldl -Wall $unitFile -o $unitFile.app
+	valgrind $unitFile.app >& $unitFile.out
 fi
 
 echo COMPILING...
 g++ -ansi -pedantic -Wall $source -o $source.app
 
-echo RUNNING PROGRAM...
-$source.app < $inFile
+#echo RUNNING PROGRAM...
+#$source.app < $inFile > $outFile
 #valgrind Sphere.c++.app < $inFile #>& $outFile
 
-
-<< '--MULTICOMMENT--'
-free comments!
-
 echo CHECKING OUTPUT...
-diff -lc RunCollatz.out RunCollatz.in
+#diff -lc RunCollatz.out RunCollatz.in
 
 echo GENERATING COMMIT LOG...
 git log > Collatz.log
+
+<< '--MULTICOMMENT--'
+free comments!
 
 #echo UPDATING SPHERECOLLATZ FILE...
 #cp Collatz.c++ SphereCollatz.c++

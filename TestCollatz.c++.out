@@ -1,111 +1,28 @@
-/tmp/ccrKVI4E.o: In function `main':
-TestCollatz.c++:(.text+0x289): undefined reference to `CppUnit::TextTestRunner::TextTestRunner(CppUnit::Outputter*)'
-TestCollatz.c++:(.text+0x2a0): undefined reference to `CppUnit::TestRunner::addTest(CppUnit::Test*)'
-TestCollatz.c++:(.text+0x2e4): undefined reference to `CppUnit::TextTestRunner::run(std::basic_string<char, std::char_traits<char>, std::allocator<char> >, bool, bool, bool)'
-TestCollatz.c++:(.text+0x35f): undefined reference to `CppUnit::TextTestRunner::~TextTestRunner()'
-TestCollatz.c++:(.text+0x37b): undefined reference to `CppUnit::TextTestRunner::~TextTestRunner()'
-/tmp/ccrKVI4E.o: In function `TestCollatz::test_read()':
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x116): undefined reference to `CppUnit::SourceLine::SourceLine(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x172): undefined reference to `CppUnit::Message::Message(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x194): undefined reference to `CppUnit::Asserter::failIf(bool, CppUnit::Message const&, CppUnit::SourceLine const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x24d): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x27a): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x315): undefined reference to `CppUnit::SourceLine::SourceLine(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x371): undefined reference to `CppUnit::Message::Message(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x395): undefined reference to `CppUnit::Asserter::failIf(bool, CppUnit::Message const&, CppUnit::SourceLine const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x44e): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x47b): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x51c): undefined reference to `CppUnit::SourceLine::SourceLine(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x584): undefined reference to `CppUnit::Message::Message(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x5a8): undefined reference to `CppUnit::Asserter::failIf(bool, CppUnit::Message const&, CppUnit::SourceLine const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x66d): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-TestCollatz.c++:(.text._ZN11TestCollatz9test_readEv[TestCollatz::test_read()]+0x69a): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-/tmp/ccrKVI4E.o: In function `TestCollatz::test_eval_1()':
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_1Ev[TestCollatz::test_eval_1()]+0x5c): undefined reference to `CppUnit::SourceLine::SourceLine(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_1Ev[TestCollatz::test_eval_1()]+0xb8): undefined reference to `CppUnit::Message::Message(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_1Ev[TestCollatz::test_eval_1()]+0xd7): undefined reference to `CppUnit::Asserter::failIf(bool, CppUnit::Message const&, CppUnit::SourceLine const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_1Ev[TestCollatz::test_eval_1()]+0x18d): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_1Ev[TestCollatz::test_eval_1()]+0x1b7): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-/tmp/ccrKVI4E.o: In function `TestCollatz::test_eval_2()':
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_2Ev[TestCollatz::test_eval_2()]+0x5c): undefined reference to `CppUnit::SourceLine::SourceLine(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_2Ev[TestCollatz::test_eval_2()]+0xb8): undefined reference to `CppUnit::Message::Message(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_2Ev[TestCollatz::test_eval_2()]+0xd7): undefined reference to `CppUnit::Asserter::failIf(bool, CppUnit::Message const&, CppUnit::SourceLine const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_2Ev[TestCollatz::test_eval_2()]+0x18d): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_2Ev[TestCollatz::test_eval_2()]+0x1b7): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-/tmp/ccrKVI4E.o: In function `TestCollatz::test_eval_3()':
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_3Ev[TestCollatz::test_eval_3()]+0x5c): undefined reference to `CppUnit::SourceLine::SourceLine(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_3Ev[TestCollatz::test_eval_3()]+0xb8): undefined reference to `CppUnit::Message::Message(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_3Ev[TestCollatz::test_eval_3()]+0xd7): undefined reference to `CppUnit::Asserter::failIf(bool, CppUnit::Message const&, CppUnit::SourceLine const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_3Ev[TestCollatz::test_eval_3()]+0x18d): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_3Ev[TestCollatz::test_eval_3()]+0x1b7): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-/tmp/ccrKVI4E.o: In function `TestCollatz::test_eval_4()':
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_4Ev[TestCollatz::test_eval_4()]+0x5c): undefined reference to `CppUnit::SourceLine::SourceLine(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_4Ev[TestCollatz::test_eval_4()]+0xb8): undefined reference to `CppUnit::Message::Message(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_4Ev[TestCollatz::test_eval_4()]+0xda): undefined reference to `CppUnit::Asserter::failIf(bool, CppUnit::Message const&, CppUnit::SourceLine const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_4Ev[TestCollatz::test_eval_4()]+0x190): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-TestCollatz.c++:(.text._ZN11TestCollatz11test_eval_4Ev[TestCollatz::test_eval_4()]+0x1ba): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-/tmp/ccrKVI4E.o: In function `TestCollatz::test_print()':
-TestCollatz.c++:(.text._ZN11TestCollatz10test_printEv[TestCollatz::test_print()]+0x7c): undefined reference to `CppUnit::SourceLine::SourceLine(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
-TestCollatz.c++:(.text._ZN11TestCollatz10test_printEv[TestCollatz::test_print()]+0xd8): undefined reference to `CppUnit::Message::Message(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz10test_printEv[TestCollatz::test_print()]+0x11a): undefined reference to `CppUnit::Asserter::failIf(bool, CppUnit::Message const&, CppUnit::SourceLine const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz10test_printEv[TestCollatz::test_print()]+0x1f7): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-TestCollatz.c++:(.text._ZN11TestCollatz10test_printEv[TestCollatz::test_print()]+0x221): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-/tmp/ccrKVI4E.o: In function `TestCollatz::test_solve()':
-TestCollatz.c++:(.text._ZN11TestCollatz10test_solveEv[TestCollatz::test_solve()]+0x123): undefined reference to `CppUnit::SourceLine::SourceLine(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
-TestCollatz.c++:(.text._ZN11TestCollatz10test_solveEv[TestCollatz::test_solve()]+0x17f): undefined reference to `CppUnit::Message::Message(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz10test_solveEv[TestCollatz::test_solve()]+0x1c1): undefined reference to `CppUnit::Asserter::failIf(bool, CppUnit::Message const&, CppUnit::SourceLine const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz10test_solveEv[TestCollatz::test_solve()]+0x29e): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-TestCollatz.c++:(.text._ZN11TestCollatz10test_solveEv[TestCollatz::test_solve()]+0x2c8): undefined reference to `CppUnit::SourceLine::~SourceLine()'
-/tmp/ccrKVI4E.o: In function `TestCollatz::getTestNamer__()':
-TestCollatz.c++:(.text._ZN11TestCollatz14getTestNamer__Ev[TestCollatz::getTestNamer__()]+0x3f): undefined reference to `CppUnit::TestNamer::TestNamer(std::type_info const&)'
-TestCollatz.c++:(.text._ZN11TestCollatz14getTestNamer__Ev[TestCollatz::getTestNamer__()]+0x4e): undefined reference to `CppUnit::TestNamer::~TestNamer()'
-/tmp/ccrKVI4E.o: In function `CppUnit::TestSuiteBuilderContext<TestCollatz>::~TestSuiteBuilderContext()':
-TestCollatz.c++:(.text._ZN7CppUnit23TestSuiteBuilderContextI11TestCollatzED1Ev[CppUnit::TestSuiteBuilderContext<TestCollatz>::~TestSuiteBuilderContext()]+0x1f): undefined reference to `CppUnit::TestSuiteBuilderContextBase::~TestSuiteBuilderContextBase()'
-/tmp/ccrKVI4E.o: In function `CppUnit::TestSuiteBuilderContext<TestCollatz>::~TestSuiteBuilderContext()':
-TestCollatz.c++:(.text._ZN7CppUnit23TestSuiteBuilderContextI11TestCollatzED0Ev[CppUnit::TestSuiteBuilderContext<TestCollatz>::~TestSuiteBuilderContext()]+0x1f): undefined reference to `CppUnit::TestSuiteBuilderContextBase::~TestSuiteBuilderContextBase()'
-/tmp/ccrKVI4E.o: In function `TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)':
-TestCollatz.c++:(.text._ZN11TestCollatz15addTestsToSuiteERN7CppUnit27TestSuiteBuilderContextBaseE[TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)]+0x67): undefined reference to `CppUnit::TestSuiteBuilderContextBase::getTestNameFor(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const'
-TestCollatz.c++:(.text._ZN11TestCollatz15addTestsToSuiteERN7CppUnit27TestSuiteBuilderContextBaseE[TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)]+0xd7): undefined reference to `CppUnit::TestSuiteBuilderContextBase::addTest(CppUnit::Test*)'
-TestCollatz.c++:(.text._ZN11TestCollatz15addTestsToSuiteERN7CppUnit27TestSuiteBuilderContextBaseE[TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)]+0x1a2): undefined reference to `CppUnit::TestSuiteBuilderContextBase::getTestNameFor(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const'
-TestCollatz.c++:(.text._ZN11TestCollatz15addTestsToSuiteERN7CppUnit27TestSuiteBuilderContextBaseE[TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)]+0x212): undefined reference to `CppUnit::TestSuiteBuilderContextBase::addTest(CppUnit::Test*)'
-TestCollatz.c++:(.text._ZN11TestCollatz15addTestsToSuiteERN7CppUnit27TestSuiteBuilderContextBaseE[TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)]+0x2dd): undefined reference to `CppUnit::TestSuiteBuilderContextBase::getTestNameFor(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const'
-TestCollatz.c++:(.text._ZN11TestCollatz15addTestsToSuiteERN7CppUnit27TestSuiteBuilderContextBaseE[TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)]+0x34d): undefined reference to `CppUnit::TestSuiteBuilderContextBase::addTest(CppUnit::Test*)'
-TestCollatz.c++:(.text._ZN11TestCollatz15addTestsToSuiteERN7CppUnit27TestSuiteBuilderContextBaseE[TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)]+0x421): undefined reference to `CppUnit::TestSuiteBuilderContextBase::getTestNameFor(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const'
-TestCollatz.c++:(.text._ZN11TestCollatz15addTestsToSuiteERN7CppUnit27TestSuiteBuilderContextBaseE[TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)]+0x494): undefined reference to `CppUnit::TestSuiteBuilderContextBase::addTest(CppUnit::Test*)'
-TestCollatz.c++:(.text._ZN11TestCollatz15addTestsToSuiteERN7CppUnit27TestSuiteBuilderContextBaseE[TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)]+0x574): undefined reference to `CppUnit::TestSuiteBuilderContextBase::getTestNameFor(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const'
-TestCollatz.c++:(.text._ZN11TestCollatz15addTestsToSuiteERN7CppUnit27TestSuiteBuilderContextBaseE[TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)]+0x5e7): undefined reference to `CppUnit::TestSuiteBuilderContextBase::addTest(CppUnit::Test*)'
-TestCollatz.c++:(.text._ZN11TestCollatz15addTestsToSuiteERN7CppUnit27TestSuiteBuilderContextBaseE[TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)]+0x6c7): undefined reference to `CppUnit::TestSuiteBuilderContextBase::getTestNameFor(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const'
-TestCollatz.c++:(.text._ZN11TestCollatz15addTestsToSuiteERN7CppUnit27TestSuiteBuilderContextBaseE[TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)]+0x73a): undefined reference to `CppUnit::TestSuiteBuilderContextBase::addTest(CppUnit::Test*)'
-TestCollatz.c++:(.text._ZN11TestCollatz15addTestsToSuiteERN7CppUnit27TestSuiteBuilderContextBaseE[TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)]+0x81a): undefined reference to `CppUnit::TestSuiteBuilderContextBase::getTestNameFor(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const'
-TestCollatz.c++:(.text._ZN11TestCollatz15addTestsToSuiteERN7CppUnit27TestSuiteBuilderContextBaseE[TestCollatz::addTestsToSuite(CppUnit::TestSuiteBuilderContextBase&)]+0x88d): undefined reference to `CppUnit::TestSuiteBuilderContextBase::addTest(CppUnit::Test*)'
-/tmp/ccrKVI4E.o: In function `TestCollatz::suite()':
-TestCollatz.c++:(.text._ZN11TestCollatz5suiteEv[TestCollatz::suite()]+0x4f): undefined reference to `CppUnit::TestSuite::TestSuite(std::basic_string<char, std::char_traits<char>, std::allocator<char> >)'
-TestCollatz.c++:(.text._ZN11TestCollatz5suiteEv[TestCollatz::suite()]+0xd9): undefined reference to `CppUnit::TestSuiteBuilderContextBase::TestSuiteBuilderContextBase(CppUnit::TestSuite&, CppUnit::TestNamer const&, CppUnit::TestFixtureFactory&)'
-TestCollatz.c++:(.text._ZN11TestCollatz5suiteEv[TestCollatz::suite()]+0x106): undefined reference to `CppUnit::TestSuiteBuilderContextBase::~TestSuiteBuilderContextBase()'
-TestCollatz.c++:(.text._ZN11TestCollatz5suiteEv[TestCollatz::suite()]+0x11c): undefined reference to `CppUnit::TestSuiteBuilderContextBase::~TestSuiteBuilderContextBase()'
-/tmp/ccrKVI4E.o: In function `CppUnit::TestSuiteBuilderContextBase::TestSuiteBuilderContextBase(CppUnit::TestSuiteBuilderContextBase const&)':
-TestCollatz.c++:(.text._ZN7CppUnit27TestSuiteBuilderContextBaseC2ERKS0_[CppUnit::TestSuiteBuilderContextBase::TestSuiteBuilderContextBase(CppUnit::TestSuiteBuilderContextBase const&)]+0x17): undefined reference to `vtable for CppUnit::TestSuiteBuilderContextBase'
-/tmp/ccrKVI4E.o: In function `CppUnit::TestSuiteBuilderContext<TestCollatz>::makeFixture() const':
-TestCollatz.c++:(.text._ZNK7CppUnit23TestSuiteBuilderContextI11TestCollatzE11makeFixtureEv[CppUnit::TestSuiteBuilderContext<TestCollatz>::makeFixture() const]+0x14): undefined reference to `CppUnit::TestSuiteBuilderContextBase::makeTestFixture() const'
-/tmp/ccrKVI4E.o: In function `CppUnit::TestCaller<TestCollatz>::TestCaller(std::basic_string<char, std::char_traits<char>, std::allocator<char> >, void (TestCollatz::*)(), TestCollatz*)':
-TestCollatz.c++:(.text._ZN7CppUnit10TestCallerI11TestCollatzEC1ESsMS1_FvvEPS1_[CppUnit::TestCaller<TestCollatz>::TestCaller(std::basic_string<char, std::char_traits<char>, std::allocator<char> >, void (TestCollatz::*)(), TestCollatz*)]+0x2e): undefined reference to `CppUnit::TestCase::TestCase(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)'
-/tmp/ccrKVI4E.o:(.rodata._ZTVN7CppUnit10TestCallerI11TestCollatzEE[vtable for CppUnit::TestCaller<TestCollatz>]+0x20): undefined reference to `CppUnit::TestCase::run(CppUnit::TestResult*)'
-/tmp/ccrKVI4E.o:(.rodata._ZTVN7CppUnit10TestCallerI11TestCollatzEE[vtable for CppUnit::TestCaller<TestCollatz>]+0x28): undefined reference to `CppUnit::TestLeaf::countTestCases() const'
-/tmp/ccrKVI4E.o:(.rodata._ZTVN7CppUnit10TestCallerI11TestCollatzEE[vtable for CppUnit::TestCaller<TestCollatz>]+0x30): undefined reference to `CppUnit::TestLeaf::getChildTestCount() const'
-/tmp/ccrKVI4E.o:(.rodata._ZTVN7CppUnit10TestCallerI11TestCollatzEE[vtable for CppUnit::TestCaller<TestCollatz>]+0x38): undefined reference to `CppUnit::Test::getChildTestAt(int) const'
-/tmp/ccrKVI4E.o:(.rodata._ZTVN7CppUnit10TestCallerI11TestCollatzEE[vtable for CppUnit::TestCaller<TestCollatz>]+0x40): undefined reference to `CppUnit::TestCase::getName() const'
-/tmp/ccrKVI4E.o:(.rodata._ZTVN7CppUnit10TestCallerI11TestCollatzEE[vtable for CppUnit::TestCaller<TestCollatz>]+0x48): undefined reference to `CppUnit::Test::findTestPath(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, CppUnit::TestPath&) const'
-/tmp/ccrKVI4E.o:(.rodata._ZTVN7CppUnit10TestCallerI11TestCollatzEE[vtable for CppUnit::TestCaller<TestCollatz>]+0x50): undefined reference to `CppUnit::Test::findTestPath(CppUnit::Test const*, CppUnit::TestPath&) const'
-/tmp/ccrKVI4E.o:(.rodata._ZTVN7CppUnit10TestCallerI11TestCollatzEE[vtable for CppUnit::TestCaller<TestCollatz>]+0x58): undefined reference to `CppUnit::Test::findTest(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const'
-/tmp/ccrKVI4E.o:(.rodata._ZTVN7CppUnit10TestCallerI11TestCollatzEE[vtable for CppUnit::TestCaller<TestCollatz>]+0x60): undefined reference to `CppUnit::Test::resolveTestPath(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) const'
-/tmp/ccrKVI4E.o:(.rodata._ZTVN7CppUnit10TestCallerI11TestCollatzEE[vtable for CppUnit::TestCaller<TestCollatz>]+0x68): undefined reference to `CppUnit::Test::checkIsValidIndex(int) const'
-/tmp/ccrKVI4E.o:(.rodata._ZTVN7CppUnit10TestCallerI11TestCollatzEE[vtable for CppUnit::TestCaller<TestCollatz>]+0x70): undefined reference to `CppUnit::TestLeaf::doGetChildTestAt(int) const'
-/tmp/ccrKVI4E.o:(.rodata._ZTIN7CppUnit10TestCallerI11TestCollatzEE[typeinfo for CppUnit::TestCaller<TestCollatz>]+0x10): undefined reference to `typeinfo for CppUnit::TestCase'
-/tmp/ccrKVI4E.o:(.rodata._ZTIN7CppUnit23TestSuiteBuilderContextI11TestCollatzEE[typeinfo for CppUnit::TestSuiteBuilderContext<TestCollatz>]+0x10): undefined reference to `typeinfo for CppUnit::TestSuiteBuilderContextBase'
-/tmp/ccrKVI4E.o: In function `CppUnit::TestCaller<TestCollatz>::~TestCaller()':
-TestCollatz.c++:(.text._ZN7CppUnit10TestCallerI11TestCollatzED1Ev[CppUnit::TestCaller<TestCollatz>::~TestCaller()]+0x6c): undefined reference to `CppUnit::TestCase::~TestCase()'
-TestCollatz.c++:(.text._ZN7CppUnit10TestCallerI11TestCollatzED1Ev[CppUnit::TestCaller<TestCollatz>::~TestCaller()]+0x88): undefined reference to `CppUnit::TestCase::~TestCase()'
-/tmp/ccrKVI4E.o: In function `CppUnit::TestCaller<TestCollatz>::~TestCaller()':
-TestCollatz.c++:(.text._ZN7CppUnit10TestCallerI11TestCollatzED0Ev[CppUnit::TestCaller<TestCollatz>::~TestCaller()]+0x6c): undefined reference to `CppUnit::TestCase::~TestCase()'
-TestCollatz.c++:(.text._ZN7CppUnit10TestCallerI11TestCollatzED0Ev[CppUnit::TestCaller<TestCollatz>::~TestCaller()]+0x88): undefined reference to `CppUnit::TestCase::~TestCase()'
-collect2: ld returned 1 exit status
+==19760== Memcheck, a memory error detector
+==19760== Copyright (C) 2002-2009, and GNU GPL'd, by Julian Seward et al.
+==19760== Using Valgrind-3.6.0.SVN-Debian and LibVEX; rerun with -h for copyright info
+==19760== Command: TestCollatz.c++.app
+==19760== 
+TestCollatz.c++
+.......
+
+
+OK (7 tests)
+
+
+Done.
+==19760== 
+==19760== HEAP SUMMARY:
+==19760==     in use at exit: 122,880 bytes in 6 blocks
+==19760==   total heap usage: 211 allocs, 205 frees, 150,070 bytes allocated
+==19760== 
+==19760== LEAK SUMMARY:
+==19760==    definitely lost: 0 bytes in 0 blocks
+==19760==    indirectly lost: 0 bytes in 0 blocks
+==19760==      possibly lost: 0 bytes in 0 blocks
+==19760==    still reachable: 122,880 bytes in 6 blocks
+==19760==         suppressed: 0 bytes in 0 blocks
+==19760== Rerun with --leak-check=full to see details of leaked memory
+==19760== 
+==19760== For counts of detected and suppressed errors, rerun with: -v
+==19760== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 4 from 4)
