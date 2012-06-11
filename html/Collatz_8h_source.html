@@ -18,6 +18,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="index.html"><span>Main&nbsp;Page</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -38,9 +39,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul>
       <li><a href="files.html"><span>File&nbsp;List</span></a></li>
+      <li><a href="globals.html"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-<h1>Collatz.h</h1><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// --------------------------</span>
+<h1>Collatz.h</h1><a href="Collatz_8h.html">Go to the documentation of this file.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">// --------------------------</span>
 <a name="l00002"></a>00002 <span class="comment">// projects/collatz/Collatz.h</span>
 <a name="l00003"></a>00003 <span class="comment">// Copyright (C) 2011</span>
 <a name="l00004"></a>00004 <span class="comment">// Glenn P. Downing</span>
@@ -53,61 +55,107 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00011"></a>00011 <span class="preprocessor">#include &lt;cassert&gt;</span>  <span class="comment">// assert</span>
 <a name="l00012"></a>00012 <span class="preprocessor">#include &lt;iostream&gt;</span> <span class="comment">// endl, istream, ostream</span>
 <a name="l00013"></a>00013 
-<a name="l00014"></a>00014 <span class="comment">// ------------</span>
-<a name="l00015"></a>00015 <span class="comment">// collatz_read</span>
-<a name="l00016"></a>00016 <span class="comment">// ------------</span>
-<a name="l00017"></a>00017 
-<a name="l00025"></a>00025 <span class="keywordtype">bool</span> collatz_read (std::istream&amp; r, <span class="keywordtype">int</span>&amp; i, <span class="keywordtype">int</span>&amp; j) {
-<a name="l00026"></a>00026     r &gt;&gt; i;
-<a name="l00027"></a>00027     <span class="keywordflow">if</span> (!r)
-<a name="l00028"></a>00028         <span class="keywordflow">return</span> <span class="keyword">false</span>;
-<a name="l00029"></a>00029     r &gt;&gt; j;
-<a name="l00030"></a>00030     assert(i &gt; 0);
-<a name="l00031"></a>00031     assert(j &gt; 0);
-<a name="l00032"></a>00032     <span class="keywordflow">return</span> <span class="keyword">true</span>;}
-<a name="l00033"></a>00033 
-<a name="l00034"></a>00034 <span class="comment">// ------------</span>
-<a name="l00035"></a>00035 <span class="comment">// collatz_eval</span>
-<a name="l00036"></a>00036 <span class="comment">// ------------</span>
-<a name="l00037"></a>00037 
-<a name="l00043"></a>00043 <span class="keywordtype">int</span> collatz_eval (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j) {
-<a name="l00044"></a>00044     assert(i &gt; 0);
-<a name="l00045"></a>00045     assert(j &gt; 0);
-<a name="l00046"></a>00046     <span class="comment">// &lt;your code&gt;</span>
-<a name="l00047"></a>00047     
-<a name="l00048"></a>00048     
-<a name="l00049"></a>00049     
-<a name="l00050"></a>00050     <span class="keywordtype">int</span> v = 1;
-<a name="l00051"></a>00051     assert(v &gt; 0);
-<a name="l00052"></a>00052     <span class="keywordflow">return</span> v;}
-<a name="l00053"></a>00053 
-<a name="l00054"></a>00054 <span class="comment">// -------------</span>
-<a name="l00055"></a>00055 <span class="comment">// collatz_print</span>
-<a name="l00056"></a>00056 <span class="comment">// -------------</span>
-<a name="l00057"></a>00057 
-<a name="l00065"></a>00065 <span class="keywordtype">void</span> collatz_print (std::ostream&amp; w, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j, <span class="keywordtype">int</span> v) {
-<a name="l00066"></a>00066     assert(i &gt; 0);
-<a name="l00067"></a>00067     assert(j &gt; 0);
-<a name="l00068"></a>00068     assert(v &gt; 0);
-<a name="l00069"></a>00069     w &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; j &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; v &lt;&lt; std::endl;}
-<a name="l00070"></a>00070 
-<a name="l00071"></a>00071 <span class="comment">// -------------</span>
-<a name="l00072"></a>00072 <span class="comment">// collatz_solve</span>
-<a name="l00073"></a>00073 <span class="comment">// -------------</span>
-<a name="l00074"></a>00074 
-<a name="l00080"></a>00080 <span class="keywordtype">void</span> collatz_solve (std::istream&amp; r, std::ostream&amp; w) {
-<a name="l00081"></a>00081     <span class="keywordtype">int</span> i;
-<a name="l00082"></a>00082     <span class="keywordtype">int</span> j;
-<a name="l00083"></a>00083     <span class="keywordflow">while</span> (collatz_read(r, i, j)) {
-<a name="l00084"></a>00084         <span class="keyword">const</span> <span class="keywordtype">int</span> v = collatz_eval(i, j);
-<a name="l00085"></a>00085         collatz_print(w, i, j, v);}}
+<a name="l00014"></a>00014 <span class="comment">// globals</span>
+<a name="l00015"></a><a class="code" href="Collatz_8h.html#ada51d0ff8995fce8a08992dcdf5e5c1a">00015</a> <span class="keywordtype">int</span> <a class="code" href="Collatz_8h.html#ada51d0ff8995fce8a08992dcdf5e5c1a">cache</a> [1000*1000];
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="comment">// ------------</span>
+<a name="l00018"></a>00018 <span class="comment">// collatz_read</span>
+<a name="l00019"></a>00019 <span class="comment">// ------------</span>
+<a name="l00020"></a>00020 
+<a name="l00028"></a><a class="code" href="Collatz_8h.html#a3a40ba8f8bbffa46237b896a95fa35a0">00028</a> <span class="keywordtype">bool</span> <a class="code" href="Collatz_8h.html#a3a40ba8f8bbffa46237b896a95fa35a0">collatz_read</a> (std::istream&amp; r, <span class="keywordtype">int</span>&amp; i, <span class="keywordtype">int</span>&amp; <a class="code" href="namespaceTestGen.html#a8956c9396cd9ed3581498bc5a5094fcc">j</a>) {
+<a name="l00029"></a>00029     r &gt;&gt; i;
+<a name="l00030"></a>00030     <span class="keywordflow">if</span> (!r)
+<a name="l00031"></a>00031         <span class="keywordflow">return</span> <span class="keyword">false</span>;
+<a name="l00032"></a>00032     r &gt;&gt; j;
+<a name="l00033"></a>00033     assert(i &gt; 0);
+<a name="l00034"></a>00034     assert(j &gt; 0);
+<a name="l00035"></a>00035     <span class="keywordflow">return</span> <span class="keyword">true</span>;}
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037 <span class="comment">// -------------</span>
+<a name="l00038"></a>00038 <span class="comment">// cycleLength</span>
+<a name="l00039"></a>00039 <span class="comment">// -------------</span>
+<a name="l00040"></a>00040 
+<a name="l00045"></a><a class="code" href="Collatz_8h.html#a9cf7075bca8df1677ef8cf8c9954aef7">00045</a> <span class="keywordtype">int</span> <a class="code" href="Collatz_8h.html#a9cf7075bca8df1677ef8cf8c9954aef7">cycleLength</a> (<span class="keywordtype">int</span> n) {
+<a name="l00046"></a>00046         <span class="keywordtype">int</span> v = 1;
+<a name="l00047"></a>00047         
+<a name="l00048"></a>00048         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> k = n; k != 1;){
+<a name="l00049"></a>00049                 <span class="keywordflow">if</span>(<a class="code" href="Collatz_8h.html#ada51d0ff8995fce8a08992dcdf5e5c1a">cache</a>[k] != 0){
+<a name="l00050"></a>00050                         v += <a class="code" href="Collatz_8h.html#ada51d0ff8995fce8a08992dcdf5e5c1a">cache</a>[k] - 1;
+<a name="l00051"></a>00051                         <span class="keywordflow">break</span>;
+<a name="l00052"></a>00052                 }
+<a name="l00053"></a>00053                 
+<a name="l00054"></a>00054                 <span class="keywordflow">if</span> (k % 2){
+<a name="l00055"></a>00055                         k = k + (k &gt;&gt; 1) + 1;
+<a name="l00056"></a>00056                         v += 2;
+<a name="l00057"></a>00057                 }<span class="keywordflow">else</span>{
+<a name="l00058"></a>00058                         k /= 2;
+<a name="l00059"></a>00059                         ++v;
+<a name="l00060"></a>00060                 }
+<a name="l00061"></a>00061         }
+<a name="l00062"></a>00062         
+<a name="l00063"></a>00063         <a class="code" href="Collatz_8h.html#ada51d0ff8995fce8a08992dcdf5e5c1a">cache</a>[n] = v;
+<a name="l00064"></a>00064         
+<a name="l00065"></a>00065         <span class="keywordflow">return</span> v;
+<a name="l00066"></a>00066 }
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068 <span class="comment">// ------------</span>
+<a name="l00069"></a>00069 <span class="comment">// collatz_eval</span>
+<a name="l00070"></a>00070 <span class="comment">// ------------</span>
+<a name="l00071"></a>00071 
+<a name="l00077"></a><a class="code" href="Collatz_8h.html#a0b0d3827a619c18aa4d96b8ee8b1c47d">00077</a> <span class="keywordtype">int</span> <a class="code" href="Collatz_8h.html#a0b0d3827a619c18aa4d96b8ee8b1c47d">collatz_eval</a> (<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> <a class="code" href="namespaceTestGen.html#a8956c9396cd9ed3581498bc5a5094fcc">j</a>) {
+<a name="l00078"></a>00078     assert(i &gt; 0);
+<a name="l00079"></a>00079     assert(j &gt; 0);
+<a name="l00080"></a>00080     
+<a name="l00081"></a>00081     <span class="keywordflow">if</span> (i &gt; j){         <span class="comment">// swap</span>
+<a name="l00082"></a>00082         <span class="keywordtype">int</span> t = i;
+<a name="l00083"></a>00083         i = j;
+<a name="l00084"></a>00084         j = t;
+<a name="l00085"></a>00085     }
+<a name="l00086"></a>00086     
+<a name="l00087"></a>00087     <span class="comment">// optimize range</span>
+<a name="l00088"></a>00088     <span class="keywordflow">if</span> (i &lt; j/2){
+<a name="l00089"></a>00089         i = j/2;
+<a name="l00090"></a>00090     }
+<a name="l00091"></a>00091     
+<a name="l00092"></a>00092     <span class="keywordtype">int</span> v = 1;
+<a name="l00093"></a>00093     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = i; x &lt;= j; ++x){
+<a name="l00094"></a>00094         <span class="keywordtype">int</span> cLen = <a class="code" href="Collatz_8h.html#a9cf7075bca8df1677ef8cf8c9954aef7">cycleLength</a>(x);
+<a name="l00095"></a>00095         <span class="keywordflow">if</span> (cLen &gt; v)
+<a name="l00096"></a>00096                 v = cLen;
+<a name="l00097"></a>00097         
+<a name="l00098"></a>00098     }
+<a name="l00099"></a>00099     assert(v &gt; 0);
+<a name="l00100"></a>00100     
+<a name="l00101"></a>00101     <span class="keywordflow">return</span> v;}
+<a name="l00102"></a>00102 
+<a name="l00103"></a>00103 
+<a name="l00104"></a>00104 <span class="comment">// -------------</span>
+<a name="l00105"></a>00105 <span class="comment">// collatz_print</span>
+<a name="l00106"></a>00106 <span class="comment">// -------------</span>
+<a name="l00107"></a>00107 
+<a name="l00115"></a><a class="code" href="Collatz_8h.html#adf6b95d9f3ce8b88e54d9fdf92098261">00115</a> <span class="keywordtype">void</span> <a class="code" href="Collatz_8h.html#adf6b95d9f3ce8b88e54d9fdf92098261">collatz_print</a> (std::ostream&amp; w, <span class="keywordtype">int</span> i, <span class="keywordtype">int</span> <a class="code" href="namespaceTestGen.html#a8956c9396cd9ed3581498bc5a5094fcc">j</a>, <span class="keywordtype">int</span> v) {
+<a name="l00116"></a>00116     assert(i &gt; 0);
+<a name="l00117"></a>00117     assert(j &gt; 0);
+<a name="l00118"></a>00118     assert(v &gt; 0);
+<a name="l00119"></a>00119     w &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; j &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; v &lt;&lt; std::endl;}
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121 <span class="comment">// -------------</span>
+<a name="l00122"></a>00122 <span class="comment">// collatz_solve</span>
+<a name="l00123"></a>00123 <span class="comment">// -------------</span>
+<a name="l00124"></a>00124 
+<a name="l00130"></a><a class="code" href="Collatz_8h.html#a6718fc0c4a3e100d6047500a271d572d">00130</a> <span class="keywordtype">void</span> <a class="code" href="Collatz_8h.html#a6718fc0c4a3e100d6047500a271d572d">collatz_solve</a> (std::istream&amp; r, std::ostream&amp; w) {
+<a name="l00131"></a>00131     <span class="keywordtype">int</span> i;
+<a name="l00132"></a>00132     <span class="keywordtype">int</span> <a class="code" href="namespaceTestGen.html#a8956c9396cd9ed3581498bc5a5094fcc">j</a>;
+<a name="l00133"></a>00133     <span class="keywordflow">while</span> (<a class="code" href="Collatz_8h.html#a3a40ba8f8bbffa46237b896a95fa35a0">collatz_read</a>(r, i, j)) {
+<a name="l00134"></a>00134         <span class="keyword">const</span> <span class="keywordtype">int</span> v = <a class="code" href="Collatz_8h.html#a0b0d3827a619c18aa4d96b8ee8b1c47d">collatz_eval</a>(i, j);
+<a name="l00135"></a>00135         <a class="code" href="Collatz_8h.html#adf6b95d9f3ce8b88e54d9fdf92098261">collatz_print</a>(w, i, j, v);}}
 </pre></div></div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&nbsp;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&nbsp;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&nbsp;</span>Namespaces</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&nbsp;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&nbsp;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&nbsp;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,7 +164,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address style="text-align: right;"><small>Generated on Mon Jun 11 15:37:57 2012 by&nbsp;
+<hr class="footer"/><address style="text-align: right;"><small>Generated on Mon Jun 11 17:51:14 2012 by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.6.3 </small></address>
 </body>

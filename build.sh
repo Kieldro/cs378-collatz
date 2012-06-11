@@ -27,14 +27,13 @@ echo CHECKING OUTPUT...
 echo GENERATING COMMIT LOG...
 git log > Collatz.log
 
+echo RUNNING DOXYGEN
+doxygen Doxyfile
+
 << '--MULTICOMMENT--'
 free comments!
 
 #echo UPDATING SPHERECOLLATZ FILE...
 #cp Collatz.c++ SphereCollatz.c++
-
-echo RUNNING DOXYGEN
-doxygen -g
-doxygen Doxyfile
 
 --MULTICOMMENT--
