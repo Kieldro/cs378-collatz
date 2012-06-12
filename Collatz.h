@@ -12,7 +12,9 @@
 #include <iostream> // endl, istream, ostream
 
 // globals
-int cache [1000*1000];
+const static int DEBUG = true;
+const static int CACHE_SIZE = 3*1000*1000 + 1;
+int cache [CACHE_SIZE];
 
 // ------------
 // collatz_read
@@ -30,6 +32,8 @@ bool collatz_read (std::istream& r, int& i, int& j) {
     if (!r)
         return false;
     r >> j;
+    
+    
     assert(i > 0);
     assert(j > 0);
     return true;}
@@ -43,10 +47,13 @@ bool collatz_read (std::istream& r, int& i, int& j) {
  * @param n positive integer
  */
 int cycleLength (int n) {
+    assert(n > 0);
 	int v = 1;
 	
 	for(int k = n; k != 1;){
-		if(cache[k] != 0){
+		if(k < CACHE_SIZE && cache[k] != 0){
+			//if (DEBUG) std::cout << "k = " << k << std::endl;
+			assert(k < CACHE_SIZE);
 			v += cache[k] - 1;
 			break;
 		}
@@ -59,9 +66,13 @@ int cycleLength (int n) {
 			++v;
 		}
 	}
+	if(n < CACHE_SIZE){
+		assert(n < CACHE_SIZE);
+		cache[n] = v;
+	}
+    assert(cache[0] >= 0);
 	
-	cache[n] = v;
-	
+    assert(v > 0);
 	return v;
 }
 

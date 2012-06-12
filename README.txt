@@ -1,5 +1,5 @@
 Course Name: CS 378
-Unique: 
+Unique: 91060
 First Name: Ian
 Last Name: Buitrago
 EID: ib
@@ -7,7 +7,7 @@ CS Username: keo
 GitHub ID: Kieldro
 GitHub Repository Name: cs378-collatz
 Estimated number of hours: 10
-Actual    number of hours: 12
+Actual    number of hours: 10
 Comments:
 questions:
 * tab vs 2 space indention

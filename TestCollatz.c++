@@ -185,6 +185,10 @@ struct TestCollatz : CppUnit::TestFixture {
     CPPUNIT_TEST(test_read_2);
     CPPUNIT_TEST(test_read_3);
     
+    CPPUNIT_TEST(test_cycleLength_1);
+    CPPUNIT_TEST(test_cycleLength_2);
+    CPPUNIT_TEST(test_cycleLength_3);
+    
     CPPUNIT_TEST(test_eval_1);
     CPPUNIT_TEST(test_eval_2);
     CPPUNIT_TEST(test_eval_3);

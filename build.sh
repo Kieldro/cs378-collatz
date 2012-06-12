@@ -6,7 +6,7 @@ unitFile="TestCollatz.c++"
 inFile="RunCollatz.in"
 outFile="RunCollatz.out"
 compile=true
-unit=true
+unit=false
 
 if $unit; then
 	echo UNIT TESTS...
@@ -17,12 +17,12 @@ fi
 echo COMPILING...
 g++ -ansi -pedantic -Wall $source -o $source.app
 
-#echo RUNNING PROGRAM...
-$source.app < $inFile > $outFile
-valgrind $source.app < $inFile >& $outFile
+echo RUNNING PROGRAM...
+valgrind $source.app < $inFile #>& $outFile
+#valgrind $source.app < $inFile >& $outFile
 
 echo CHECKING OUTPUT...
-diff -lc RunCollatz.out RunCollatz.in
+#diff -lc RunCollatz.out RunCollatz.in
 
 echo GENERATING COMMIT LOG...
 git log > Collatz.log
