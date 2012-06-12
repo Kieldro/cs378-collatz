@@ -1,3 +1,9 @@
+commit 321fef786b5bc5802141e26d10d267416cd008df
+Author: Ian Buitrago <kieldro@gmail.com>
+Date:   Mon Jun 11 19:50:29 2012 -0500
+
+    debugged cache.
+
 commit fabfad78df4aacfe4b18835db77a55d64ccfefd2
 Author: Ian Buitrago <kieldro@gmail.com>
 Date:   Mon Jun 11 18:36:33 2012 -0500
